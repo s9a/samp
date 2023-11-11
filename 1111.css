@@ -1,0 +1,42 @@
+::selection {
+  color: midnightblue;
+  background: deepskyblue;
+}
+
+:root {
+  --rq: darkturquoise;
+  --qu: aquamarine;
+  --pu: #404;
+  --rp: #518;
+  --dc: #EC0;
+  --cd: #ED3;
+  --kv: darkviolet;
+  --ev: blueviolet;
+  background-color: skyblue;
+  background-image: conic-gradient(
+    var(--dc),
+    var(--qu),
+    var(--cd),
+    var(--kv)
+  );
+  border-color: var(--rq);
+  color: var(--rp);
+}
+
+::marker {
+  color: var(--kv);
+}
+
+:any-link {
+  color: var(--rp);
+  background: var(--dc);
+}
+
+:active {
+  border-top-color: var(--cd);
+  border-bottom-color: var(--cd);
+  --pu: var(--qu);
+  --rq: var(--ev);
+  --kv: var(--cd);
+  --dc: var(--rp);
+}
